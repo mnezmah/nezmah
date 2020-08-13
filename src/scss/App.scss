@@ -1,0 +1,13 @@
+// variables
+@import  './variables';
+
+// partials
+@import './Components/hero';
+@import './Components/home';
+@import './Components/navbar';
+@import './Components/about';
+@import './Components/title';
+
+body {
+  background: $background;
+}

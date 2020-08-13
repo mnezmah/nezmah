@@ -1,0 +1,31 @@
+#Hero {
+height: 80vh;
+
+  .video {
+    position: absolute;
+    top: -4rem;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .hero__title {
+    background-color:transparent;
+      .display {
+    font-size: 8rem;
+    color: $yellow;
+    font-family: $display;
+    font-weight: bold;
+    opacity: 10;
+    mix-blend-mode: difference;
+    letter-spacing: 10px;
+  }
+
+  .subtitle {
+    font-family: $subtitle;
+    font-weight: 600;
+    color: $blue;
+  }
+  }
+
+}

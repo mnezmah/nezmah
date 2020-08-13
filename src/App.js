@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import Home from './components/Home'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../src/scss/App.scss'
 
 function App() {
   return (
     <div className="App">
-    <h1>MARIO NEZMAH</h1>
-    <h5>Web Developer</h5>
+      <Home/>
     </div>
   );
 }

@@ -1,31 +1,31 @@
 #Hero {
-height: 80vh;
+  height: 80vh;
 
   .video {
+    height: 100vh;
     position: absolute;
     top: -4rem;
-    z-index: -1;
-    height: 100vh;
     width: 100vw;
+    z-index: -1;
   }
 
   .hero__title {
-    background-color:transparent;
-      .display {
-    font-size: 8rem;
-    color: $yellow;
-    font-family: $display;
-    font-weight: bold;
-    opacity: 10;
-    mix-blend-mode: difference;
-    letter-spacing: 10px;
-  }
+    background-color: transparent;
 
-  .subtitle {
-    font-family: $subtitle;
-    font-weight: 600;
-    color: $blue;
-  }
-  }
+    .display {
+      color: $yellow;
+      font-family: $display;
+      font-size: 8rem;
+      font-weight: bold;
+      letter-spacing: 10px;
+      mix-blend-mode: difference;
+      opacity: 10;
+    }
 
+    .subtitle {
+      color: $blue;
+      font-family: $subtitle;
+      font-weight: 600;
+    }
+  }
 }

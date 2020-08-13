@@ -1,5 +1,7 @@
 .subtitle {
-  font-family: "Roboto", Sans-serif;
-  font-weight: 600;
   color: $grey;
+  font-family: $subtitle;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
 }

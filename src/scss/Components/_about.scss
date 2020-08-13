@@ -1,10 +1,20 @@
 #About {
+
   .about__container {
-    border:solid 2px $yellow;
+    border: solid 2px $yellow;
+
+    .about__content {
+      font-family: $subtitle;
+      font-size: 20px;
+      font-weight: 200;
+      letter-spacing: -0.1px;
+      text-align: center;
+    }
+    
     .about__img {
-      height: 250px;
-      width: 250px;
       border-radius: 50%;
+      height: 180px;
+      width: 180px;
     }
   }
 }

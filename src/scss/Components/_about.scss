@@ -1,0 +1,10 @@
+#About {
+  .about__container {
+    border:solid 2px $yellow;
+    .about__img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+    }
+  }
+}

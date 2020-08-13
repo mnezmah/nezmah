@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from './Title'
 import Subtitle from './Subtitle'
+import  portrait from '../Assets/Images/mario_nezmah.png'
 
 export default function About() {
   return (
@@ -15,9 +16,10 @@ export default function About() {
             <p>   &#8221; Make your life a masterpiece; imagine no limitations on what you can be, have&nbsp;or&nbsp;do.&#8221;</p>
           </div>
           <div className="col-2">
-            <img src="" alt="mario nezmah portrait" className="about__img"/>
+            <img src={portrait} alt="mario nezmah portrait" className="about__img"/>
           </div>
         </div>
+        <Subtitle content="Technologies I Use"></Subtitle>
       </div>
     </div>
   )

@@ -1,0 +1,18 @@
+#Goals {
+  background: url("../../Assets/Images/city-high.jpeg") $overlay;
+  background-blend-mode: multiply;
+  background-size: cover;
+  
+
+  .goals__quote {
+    color: $yellow;
+    font-family: $serif;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .goals__img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+}

@@ -15,3 +15,10 @@
 body {
   background: $background;
 }
+
+.separator{
+  border-top:5px solid $yellow;
+  color: $yellow;
+  margin: 0 auto;
+  width: 5%;
+}

@@ -23,7 +23,7 @@ import wp from '../Assets/Images/wp.png'
 
 export default function About() {
   return (
-    <div id="About" className="mx-5">
+    <div id="About" className="my-5">
       <Title content='Who am i'></Title>
       <div className="about__container">
         <Subtitle content="About Me"></Subtitle>
@@ -34,29 +34,31 @@ export default function About() {
             <p className="about__content">   &#8221; Make your life a masterpiece; imagine no limitations on what you can be, have&nbsp;or&nbsp;do.&#8221;</p>
           </div>
           <div className="col-4 justify-content-center">
-            <img src={portrait} alt="mario nezmah portrait" className="about__img"/>
+            <img src={portrait} alt="mario nezmah portrait" className="about__img" />
           </div>
         </div>
         <Subtitle content="Technologies I Use"></Subtitle>
-        <div className="row">
-          <div className="col-12 px-5">
-          <Logo  src={html} alt="html5 logo"/>
-          <Logo  src={css} alt="css3 logo"/>
-          <Logo  src={js} alt="js logo"/>
-          <Logo  src={sass} alt="sass logo"/>
-          <Logo  src={react} alt="react logo"/>
-          <Logo  src={jest} alt="jest logo"/>
-          <Logo  src={npm} alt="npm logo"/>
-          <Logo  src={ex} alt="express logo"/>
-          <Logo  src={postgres} alt="postgresql logo"/>
-          <Logo  src={graph} alt="graphql logo"/>
-          <Logo  src={git} alt="git logo"/>
-          <Logo  src={github} alt="github logo"/>
-          <Logo  src={wp} alt="wordpress logo"/>
-          <Logo  src={fire} alt="firebase logo"/>
-          <Logo  src={bitbucket} alt="bittbucket logo"/>
+        <div className="row text-center px-5">
+          <Logo src={html} alt="html5 logo" />
+          <Logo src={css} alt="css3 logo" />
+          <Logo src={js} alt="js logo" />
+          <Logo src={sass} alt="sass logo" />
+          <Logo src={react} alt="react logo" />
+          <Logo src={jest} alt="jest logo" />
+          <Logo src={npm} alt="npm logo" />
+          <Logo src={ex} alt="express logo" />
+          <Logo src={postgres} alt="postgresql logo" />
+          <Logo src={graph} alt="graphql logo" />
+          <Logo src={git} alt="git logo" />
+           </div>
+          <div className="row text-center justify-content-center">
+            <div className="col-8">
+                <Logo src={github} alt="github logo" />
+            <Logo src={wp} alt="wordpress logo" />
+            <Logo src={fire} alt="firebase logo" />
+            <Logo src={bitbucket} alt="bittbucket logo" />
+            </div>
           </div>
-        </div>
       </div>
     </div>
   )

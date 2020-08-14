@@ -2,7 +2,6 @@
   background: url("../../Assets/Images/city-high.jpeg") $overlay;
   background-blend-mode: multiply;
   background-size: cover;
-  
 
   .goals__quote {
     color: $yellow;
@@ -10,9 +9,25 @@
     font-size: 50px;
     font-weight: 600;
   }
+  .goals__content {
+    color: $grey--dark;
+    font-family: $subtitle;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1, 7em;
+  }
   .goals__img {
     border-radius: 50%;
     height: 80px;
     width: 80px;
+  }
+  .goals__moto {
+    color: $yellow;
+    font-family: $nunito;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 2.7em;
+    text-transform: uppercase;
   }
 }

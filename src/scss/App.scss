@@ -10,6 +10,8 @@
 @import './Components/subtitle';
 @import './Components/logo';
 @import './Components/goals';
+@import './Components/projects';
+@import './Components/card';
 
 
 body {
@@ -21,4 +23,12 @@ body {
   color: $yellow;
   margin: 0 auto;
   width: 5%;
+
+  &--card{
+    width:18%;
+  }
+}
+
+.nezmah__logo {
+  height: 20px;
 }

@@ -1,3 +1,11 @@
-.homenav { 
-  height: 4rem;
+.homenav {
+  background: $overlay;
+  // height: 4rem;
+
+  .homenav__link{
+    color: $grey--dark !important;
+  }
+  .navbar-toggler-icon{
+    color: $grey--dark !important;
+  }
 }

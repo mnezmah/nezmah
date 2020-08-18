@@ -6,4 +6,8 @@
   font-size: px;
   text-transform: uppercase;
   text-align:center;
+
+  &--yellow{
+    color: $yellow;
+  }
 }

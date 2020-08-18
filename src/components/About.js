@@ -25,7 +25,7 @@ export default function About() {
         <Subtitle content="Technologies I Use"></Subtitle>
         <div className="row text-center px-5 pb-4">
           {logos.map(logo => {
-            return <Logo src = {logo.src} alt = {Logo.alt}/>
+            return <Logo src = {logo.src} alt = {Logo.alt} key={logo.id}/>
           })}
            </div>
       </div>

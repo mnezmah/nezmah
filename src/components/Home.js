@@ -4,6 +4,7 @@ import NavbarComponent from './NavbarComponent'
 import About from './About'
 import Goals from './Goals'
 import Projects from './Projects'
+import Contact from './Contact'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Goals/>
       <Projects/>
+      <Contact/>
     </div>
   )
 }

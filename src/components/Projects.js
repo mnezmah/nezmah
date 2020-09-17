@@ -5,7 +5,7 @@ import { projects } from '../Data/ProjectsData'
 
 export default function Projects() {
   return (
-    <div id="Projects" className="mt-5">
+    <div id="Projects" className="container my-5">
       <Title content="My Projects" />
       <div className="projects__container container-fluid">
         <div className="row justify-content-center">

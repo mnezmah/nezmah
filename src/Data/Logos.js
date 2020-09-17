@@ -13,82 +13,111 @@ import postgres from '../Assets/Images/logos/postgres.png'
 import react from '../Assets/Images/logos/react.png'
 import sass from '../Assets/Images/logos/sass.png'
 import wp from '../Assets/Images/logos/wp.png'
+import php from '../Assets/Images/logos/php.png'
+import laravel from '../Assets/Images/logos/laravel.png'
 
 export let logos = [
   {
     "id": 1,
     "src": html,
-    "alt": "Html5 logo"
+    "alt": "Html5 logo",
+    "title": "HTML"
   },
   {
     "id": 2,
     "src": css,
-    "alt": "Css3 logo"
+    "alt": "CSS3 logo",
+    "title": "CSS"
   },
   {
     "id": 3,
     "src": js,
-    "alt": "JavaScript logo"
+    "alt": "JavaScript logo",
+    "title": "JS"
   },
   {
     "id": 4,
     "src": sass,
-    "alt": "Sass logo"
+    "alt": "Sass logo",
+    "title": "SASS"
   },
   {
     "id": 5,
     "src": react,
-    "alt": "React.js logo"
+    "alt": "React.js logo",
+    "title": "React"
   },
   {
     "id": 6,
     "src": jest,
-    "alt": "Jest logo"
+    "alt": "Jest logo",
+    "title": "Jest"
   },
   {
     "id": 7,
     "src": npm,
-    "alt": "Npm logo"
+    "alt": "Npm logo",
+    "title": "NPM"
   },
   {
     "id": 8,
     "src": ex,
-    "alt": "Express.js logo"
+    "alt": "Express.js logo",
+    "title": "Express"
   },
   {
     "id": 9,
     "src": postgres,
-    "alt": "PostgresQL logo"
+    "alt": "PostgresQL logo",
+    "title": "Postgres"
   },
   {
     "id": 10,
-    "src": graph,
-    "alt": "GraphQLlogo"
+    "src": php,
+    "alt": "PHP logo",
+    "title": "PHP"
   },
   {
     "id": 11,
-    "src": git,
-    "alt": "Git logo"
+    "src": laravel,
+    "alt": "Laravellogo",
+    "title": "Laravel"
   },
   {
     "id": 12,
-    "src": github,
-    "alt": "GitHub logo"
+    "src": graph,
+    "alt": "GraphQLlogo",
+    "title": "GraphQL"
   },
-
   {
     "id": 13,
-    "src": wp,
-    "alt": "WordPress logo"
+    "src": git,
+    "alt": "Git logo",
+    "title": "Git"
   },
   {
     "id": 14,
-    "src": fire,
-    "alt": "FireBase logo"
+    "src": github,
+    "alt": "GitHub logo",
+    "title": "GitHub"
   },
+
   {
     "id": 15,
+    "src": wp,
+    "alt": "WordPress logo",
+    "title": "WordPress"
+  },
+  {
+    "id": 16,
+    "src": fire,
+    "alt": "FireBase logo",
+    "title": "FireBase"
+  },
+  {
+    "id": 17,
     "src": bitbucket,
-    "alt": "BitBucket logo"
+    "alt": "BitBucket logo",
+    "title": "Bitbucket"
   }
 ]

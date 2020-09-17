@@ -18,7 +18,7 @@ export let projects =
     { "id":1,
        "title": "eventizer",
        "description": "Ticket selling app written in NodeJs, Express, Sequelize, React and Redux. Full-stack app that lists Events, tickets for events, and Comments for tickets.",
-       "href":"https://evenytizer-client.herokuapp.com/",
+       "href":"https://eventizer-client.herokuapp.com/",
        "src":eventizer,
        "alt":"Eventizer project"
     },

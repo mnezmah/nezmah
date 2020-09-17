@@ -2,14 +2,13 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../src/scss/App.scss'
+import './scss/App.scss'
 
 function App() {
   return (
-    <div className="App">
+      <div className="App">
       <Home/>
     </div>
   );
 }
-
 export default App;

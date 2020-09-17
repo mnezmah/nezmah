@@ -1,7 +1,78 @@
 #Contact {
-  background: url('../../Assets/Images/city-low.jpg') $overlay--dark;
+  scroll-snap-align: start;
+  background: url("../../Assets/Images/city-low.jpg") $overlay--mid fixed;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
 
-  .contact__content{
-    color: $grey--dark;
+  .contact__content {
+    background: $transparent--dark;
+    color: $grey;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+
+    @media (min-width: 577px) {
+      max-width: 600px;
+      width: 60%;
+    }
+  }
+
+  form {
+    @media (min-width: 576px) {
+      margin: 0 auto;
+      max-width: 600px;
+      width: 60%;
+    }
+    margin: 0 1rem;
+
+    input {
+      border: 1px solid $grey;
+      height: 48px;
+      line-height: 1.8;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    textarea {
+      border: 1px solid $grey;
+      padding: 10px;
+      resize: vertical;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    .form__submit {
+      background-color: $yellow;
+      border: 1px solid transparent;
+      color: white;
+      font-family: $open;
+      font-weight: 400;
+      letter-spacing: 1.8px;
+      margin-bottom: 1rem;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  }
+
+  .social {
+    justify-content: space-evenly;
+    margin: 0 auto 3rem auto;
+    @media (min-width: 577px) {
+      width: 35%;
+    }
+    a {
+      .social__icon {
+        background-color: $overlay;
+        border-radius: 50%;
+        color: $yellow;
+        height: 3em;
+        padding: 8px;
+        width: 3em;
+      }
+    }
   }
 }

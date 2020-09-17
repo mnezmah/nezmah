@@ -1,10 +1,13 @@
 // colors
 $background: rgba(110,193,228,0.15);
 $blue: #6ec1e4;
-$grey: rgba(2,18,45,0.71);
-$grey--dark: #bababa;
+$footer: #242d46;
+$grey--dark: rgba(2,18,45,0.71);
+$grey: #bababa;
 $overlay: rgba(2,18,45,0.88);
+$overlay--mid: rgba(2,18,45,0.58);
 $overlay--dark: #02122d;
+$transparent--dark: rgba(13, 23, 51, 0.3);
 $yellow: #dfc15e;
 
 // fonts
@@ -12,3 +15,4 @@ $display: 'Kanit', Sans-serif;
 $subtitle: 'roboto', 'Sans-serif';
 $serif: 'Playfair Display','Sans-serif';
 $nunito: 'Nunito sans', Sans-serif;
+$open: 'Open sans', sans-serif;

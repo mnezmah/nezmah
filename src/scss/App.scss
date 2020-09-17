@@ -13,9 +13,11 @@
 @import './Components/projects';
 @import './Components/card';
 @import './Components/contact';
+@import './Components/footer';
 
 body {
   background: $background;
+  scroll-snap-type: y mandatory;
 }
 
 .separator{
@@ -27,6 +29,7 @@ body {
   &--card{
     width:18%;
   }
+
 }
 
 .nezmah__logo {

@@ -2,15 +2,19 @@
   background: url("../../Assets/Images/city-high.jpeg") $overlay;
   background-blend-mode: multiply;
   background-size: cover;
+  max-width: 100%;
 
   .goals__quote {
     color: $yellow;
     font-family: $serif;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
+    @media (min-width: 992px) {
+      font-size: 50px;
+    }
   }
   .goals__content {
-    color: $grey--dark;
+    color: $grey;
     font-family: $subtitle;
     font-size: 17px;
     font-weight: 300;
@@ -26,8 +30,14 @@
     font-family: $nunito;
     font-size: 18px;
     font-style: italic;
-    font-weight: 600;
-    line-height: 2.7em;
+    font-weight: 500;
+    letter-spacing: 9px;
+    line-height: 1.8rem;
     text-transform: uppercase;
+    word-break: break-word;
+
+    @media (min-width: 769px) {
+      line-height: 2.7em;
+    }
   }
 }

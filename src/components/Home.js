@@ -5,16 +5,18 @@ import About from './About'
 import Goals from './Goals'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 
 export default function Home() {
   return (
     <div id="Home">
-      <NavbarComponent></NavbarComponent>
+      <NavbarComponent/>
       <Hero/>
       <About/>
       <Goals/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

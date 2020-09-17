@@ -1,11 +1,15 @@
 .homenav {
   background: $overlay;
-  // height: 4rem;
+  // height: 3.3rem;
+  max-width: 100%;
 
   .homenav__link{
-    color: $grey--dark !important;
+    color: $grey !important;
   }
   .navbar-toggler-icon{
-    color: $grey--dark !important;
+    color: $grey !important;
   }
 }
+  .hidden {
+    display: none;
+  }

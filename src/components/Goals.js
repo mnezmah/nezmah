@@ -17,7 +17,7 @@ export default function Goals() {
       <div className="row text-center py-5">
         <div className="col-8 offset-2 offset-xl-4 col-xl-4">
         <h2 className="goals__quote py-5">"My work will lead me toward unimaginable places."</h2>
-        <p className="goals__content">Always do great work. Every site I build should be like a masterpiece, so let the thing I have done speak of myself.My goal is to fulfill every client’s dreams of a perfect fully functional website.</p>
+        <p className="goals__content">Always do great work. Every site I build should be like a masterpiece, so let the thing I have done speak of myself. My goal is to fulfill every client’s dreams of a perfect fully functional website.</p>
         <div className="row">
           <span className="separator separator--card my-5" />
         </div>

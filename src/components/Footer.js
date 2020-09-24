@@ -18,7 +18,7 @@ export default function Footer() {
     <div className="footer text-center py-3">
       <div className="footer__copy my-3 ml-5">
         <img src={nezmahLogo} alt="Mario Nezmah logo" />
-        <p>mario nezmah © <span>2018</span></p>
+        <p>mario nezmah © <span>2020</span></p>
       </div>
       <button onClick={() => scrollTo('#Home')}>
         <i>

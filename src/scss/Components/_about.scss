@@ -1,18 +1,19 @@
 #About {
-  @media(min-width: 577px) and (max-width:768px){
-     margin-top: 7rem !important;
-  }
+@media (min-width:577px) and(max-width:768px){
+   margin-top: 12rem !important;
+}
 
-  @media (min-width: 769px) and (max-width:992px) {
+  @media (min-width: 769px) and (max-width: 922px) {
     margin-top: 8rem !important;
     min-height: 100vh;
   }
 
-     @media (min-width: 993px) and (max-width:1999px) {
-    margin-top: 5rem !important;
+  @media (min-width: 923px) and (max-width: 1999px) {
+    margin-top: 15rem !important;
   }
-    @media (min-width: 2000px) {
-    margin-top: 36rem !important;
+
+  @media (min-width: 2000px) {
+    margin-top: 51rem !important;
   }
 
   .about__title {
@@ -50,13 +51,13 @@
         margin-left: 4rem;
       }
     }
-  .row{
-    @media(min-width: 992px){
-      justify-content: center;
+    .row {
+      @media (min-width: 992px) {
+        justify-content: center;
+      }
+      justify-content: space-evenly;
     }
-    justify-content: space-evenly;
-  }
-    .Logo__title{
+    .Logo__title {
       margin-top: -11%;
       color: darken($blue, 40%);
       font-weight: 500;

@@ -34,6 +34,11 @@
       margin-bottom: 10px;
       padding: 10px;
       width: 100%;
+
+    }
+
+    .input__margin{
+      margin-bottom: 0;
     }
 
     textarea {
@@ -47,14 +52,24 @@
     .form__submit {
       background-color: $yellow;
       border: 1px solid transparent;
-      color: white;
+      color: $grey--dark;
       font-family: $open;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 1.8px;
       margin-bottom: 1rem;
-      padding: 15px 30px;
       text-transform: uppercase;
       vertical-align: middle;
+    }
+
+    .form__msg{
+      background: $transparent--dark;
+      color: $yellow;
+      display: block;
+      margin-bottom: 0.5rem;
+
+      &--clear{
+        background: none;
+      }
     }
   }
 

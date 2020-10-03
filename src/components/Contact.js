@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -10,14 +10,17 @@ import { socials } from '../Data/social'
 library.add(fab)
 
 export default function Contact() {
-  const { register, handleSubmit, errors } = useForm()
 
+  const [message, setMessage] = useState('')
+  const localURL = "http://localhost:5000/api/sendMail"
+  const { register, handleSubmit, errors, reset } = useForm({
+    mode: 'onSubmit',
+    reValidateMode: 'onChange'
+  })
   const onSubmit = (data => {
-    const localURL = "http://localhost:5000/api/sendMail"
-
     async function makePostRequest() {
-    console.log('data: ', data)
-    let res = await axios.post(localURL, data)
+      console.log('data: ', data)
+      let res = await axios.post(localURL, data)
       console.log(`Status code: ${res.status}`);
       console.log(`Status text: ${res.statusText}`);
       console.log(`Request method: ${res.request.method}`);
@@ -27,7 +30,11 @@ export default function Contact() {
       console.log(`Data: ${res.data}`);
     }
 
-  makePostRequest()
+    makePostRequest()
+    reset()
+    setMessage("Thank you for your message. You will be contacted shortly 😄")
+    setTimeout(function () { setMessage('') }, 5000)
+    console.log(message)
   })
 
   return (
@@ -41,34 +48,47 @@ export default function Contact() {
 
             <div className="row">
               <div className="col-md-6 pr-md-1">
-                <input type="text"
+                <input className={errors.name ? 'input__margin' : ''}
                   name="name"
                   placeholder="Name"
-                  ref={register({ required: "Please fill in your name", minLength: { value: 2, message: "Name should have at least two characters" } })}
+                  ref={register({ required: "Please fill in your Name.", minLength: { value: 2, message: "Name should have at least two characters" } })}
                 />
+                {errors.name && <span className="form__msg">{errors.name.message}</span>}
               </div>
               <div className="col-md-6 pl-md-1">
-                <input type="text"
+                <input className={errors.email ? 'input__margin' : ''}
+                  type="text"
                   name="email"
                   placeholder="Email"
-                  ref={register}
+                  ref={register({
+                    required: "Please fill in your Email.",
+                    pattern: { value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, message: "Please enter correct Email" },
+                  })}
                 />
+                {errors.email && <span className="form__msg">{errors.email.message}</span>}
               </div>
             </div>
-            <input type="text"
+            <input className={errors.subject ? 'input__margin' : ''}
+              type="text"
               name="subject"
               placeholder="Subject"
-              ref={register}
+              ref={register({
+                required: "Please fill in the Subject."
+              })}
             />
-
-            <textarea type="text"
+            {errors.subject && <span className="form__msg">{errors.subject.message}</span>}
+            <textarea className={errors.message ? 'input__margin' : ''}
+              type="text"
               name="message"
               placeholder="Your Message:"
-              ref={register}
+              ref={register({
+                required: "Type in your message, please."
+              })}
               rows="5"
             />
+            {errors.message && <span className="form__msg">{errors.message.message}</span>}
             <input type="submit" value="send" className="form__submit" />
-            {errors.name && <span>{errors.name.message}</span>}
+            <span className=" form__msg form__msg--clear">{message}</span>
           </form>
           <div className="social row">
             {socials.map(social => {
